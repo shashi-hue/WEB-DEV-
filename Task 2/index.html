@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Internship Task 2</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Contact Me</h1>
+
+  <form id="contactForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" placeholder="Write your message here" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+
+  <p id="form-status"></p>
+
+  <!-- Responsive layout section -->
+  <section class="responsive-layout">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </section>
+
+  <!-- To-do list section -->
+  <section class="todo-section">
+    <h2>To-Do List</h2>
+    <input type="text" id="todo-input" placeholder="Add a task" />
+    <button onclick="addTodo()">Add</button>
+    <ul id="todo-list"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
