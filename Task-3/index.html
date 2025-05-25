@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Week 3 – Responsive Site</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Responsive Website</h1>
+    <nav>
+      <a href="#quiz">Quiz App</a>
+      <a href="#api">API Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Welcome!</h2>
+      <p>Check out new interactive Features.</p>
+    </section>
+
+    <section class="responsive-layout">
+      <div class="card">
+        <h3>My Projects</h3>
+        <p>Explore some of the work I’ve done using HTML, CSS, and JS.</p>
+      </div>
+      <div class="card">
+        <h3>Quiz App</h3>
+        <p>A dynamic JavaScript-based quiz with scoring and feedback.</p>
+      </div>
+      <div class="card">
+        <h3>Joke Generator</h3>
+        <p>Fetches random jokes from an API using JavaScript fetch().</p>
+      </div>
+    </section>
+
+
+    <section id="quiz" class="quiz-section">
+      <h2>Quiz App</h2>
+      <div id="quiz-box">
+        <p id="question">Loading...</p>
+        <div id="answers"></div>
+        <button id="next-btn">Next</button>
+      </div>
+      <p id="score"></p>
+    </section>
+
+    <section id="api" class="api-section">
+      <h2>Random Joke Generator</h2>
+      <button id="joke-btn" onclick="getJoke()">Get a Joke</button>
+      <div id="joke-box">
+        <p id="setup"></p>
+        <p id="punchline"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f2f2f2;
+}
+
+header {
+  background: #c4c7d7;
+  color: rgb(57, 50, 50);
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: rgb(60, 53, 53);
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+main {
+  padding: 20px;
+  background-color: #547596;
+}
+
+.intro {
+  background: rgb(203, 204, 210);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+
+.responsive-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.card {
+  background-color: rgb(203, 204, 210);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #1f2224;
+}
+
+.quiz-section {
+  background: rgb(203, 204, 210);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#answers button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  background: rgb(203, 204, 210);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#answers button:hover {
+  background: rgb(203, 204, 210);
+}
+
+#next-btn {
+  margin-top: 20px;
+  display: none;
+}
+
+.api-section {
+  background: rgb(203, 204, 210);
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+#next-btn , #joke-btn {
+background-color: #e8f0dd;
+}
+
+#joke-box {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .responsive-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .quiz-section,
+  .api-section,
+  .intro {
+    padding: 15px;
+  }
+}
