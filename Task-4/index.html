@@ -1,0 +1,49 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shashi's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome</h1>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-card">
+      <h2>Product Listing Page</h2>
+      <label for="category-filter">Filter by Category:</label>
+      <select id="category-filter" onchange="renderProducts()">
+        <option value="All">All</option>
+        <option value="Books">Books</option>
+        <option value="Electronics">Electronics</option>
+      </select>
+
+      <label for="sort-filter">Sort by Price:</label>
+      <select id="sort-filter" onchange="renderProducts()">
+        <option value="low">Low to High</option>
+        <option value="high">High to Low</option>
+      </select>
+
+      <ul id="product-list"></ul>
+    </section>
+
+    <section class="project-card">
+      <h2>To-Do List App</h2>
+      <input type="text" id="todo-input" placeholder="Add a task">
+      <button onclick="addTodo()">Add Task</button>
+      <ul id="todo-list"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
